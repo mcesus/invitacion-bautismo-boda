@@ -60,6 +60,7 @@ h1{
     font-family: '6Hands';
     font-size: 72px;
     align-self: center;
+    text-align: center;
     margin-top: 100px;
 }
 
@@ -68,7 +69,7 @@ h1{
     font-size: 24px;
     font-weight: bold;
     align-self: center;
-     margin-top: 60px;
+    margin-top: 60px;
 
 }
 
