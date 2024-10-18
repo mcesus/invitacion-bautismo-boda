@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:whitesmoke;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 420px;
+    height: 1200px;
+   border: 1px solid black;
+}
+.principal{
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    height: 500px;
+
+    background-image: url(./img/Proyecto\ Cambiar\ tamaño\ de\ imagen.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+   
+    
+     
+}
+.church{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+  align-self: center;
+   margin-top: 30px;
+    width: 100px;
+    height: 100px;
+}
+.principal h2{
+    align-self: center;
+    font-family: "Ovo", serif;
+    font-size: 14px;
+}

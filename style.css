@@ -1,0 +1,231 @@
+@font-face {
+    font-family:'Belleza' ;
+    src: url(./fonts/belleza/Belleza-Regular.ttf);
+}
+
+@font-face {
+    font-family:'6Hands' ;
+    src: url(./fonts/6hands/SixHandsChalk.ttf);
+}
+
+:root{
+    --bc: #d8d6bc ;
+    --font:  #a6a381;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:whitesmoke;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 420px;
+    height: 3000px;
+    /* border: 1px solid black; */
+}
+.principal{
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    height: 800px;
+    background-image: url(./img/fondo3.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+     
+}
+
+.church{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-self: center;
+   margin-top: 120px;
+   width: 100px;
+   height: 120px;
+}
+.principal h2{
+    align-self: center;
+    font-family: 'Belleza';
+    font-size: 28px;
+}
+
+h1{
+    font-family: '6Hands';
+    font-size: 72px;
+    align-self: center;
+    margin-top: 100px;
+}
+
+.principal p{
+    font-family: 'Belleza';
+    font-size: 24px;
+    font-weight: bold;
+    align-self: center;
+     margin-top: 60px;
+
+}
+
+.principal .heart{
+    width: 50px;
+    height: 50px;
+    
+}
+.detalles{
+    display: flex;
+    flex-direction: column;
+    height: 520px;
+    width: 420px;
+    background-image: url(./img/foto-pareja-edit.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.quiero{
+    font-family:'6Hands' ;
+    font-size: 36px;
+    align-self: center;
+    margin-top: -13px;
+
+}
+
+.detalles .testigos{
+    margin-top: 20px;
+    font-family: 'Belleza';
+    font-size: 26px;
+    align-self: center;
+   
+}
+
+.detalles2{
+    display: flex;
+    flex-direction: column;
+    height: 420px;
+    width: 420px;
+}
+.pareja{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    font-family: '6Hands';
+    font-size: 30px;
+    
+}
+
+.foto-pareja img{
+    width: 200px;
+    height: 200px;
+}
+.union{
+    padding: 5px;
+
+    width: 60px;
+    height: 60px;
+    align-self: center;
+
+}
+.frase{
+    text-align: center;
+    line-height: 24px;
+    font-family: 'Belleza';
+    font-size: 18px;
+    font-weight: bold;
+}
+.fecha, .lugar{
+    font-family: 'Belleza';
+    font-size: 24px;
+    font-weight: bold;
+    align-self: center;
+    margin-top: 30px;
+}
+
+.presencia{
+    font-family: 'Belleza';
+    font-size: 18px;
+    font-weight: bold;
+    align-self: center;
+    margin-top: 30px;
+}
+.separador{
+   
+    display: flex;
+    align-self: center;
+   
+   
+}
+
+.separador img{
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+}
+.botones{
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    height: 580px;
+
+}
+
+.confirmar, .agendar, .cbu, .map{
+    margin-top: 50px;
+    align-self: center;
+    width: 280px;
+    height: 70px;
+    border-radius: 50px;
+    font-family: 'Belleza';
+    font-size: 24px;
+    font-weight: bold;
+    border: 5px solid #a6a381;
+    
+}
+
+.agendar{
+    margin-bottom: 40px;
+}
+
+.regalo{
+    display: flex;
+    font-family: 'Belleza';
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+  
+}
+
+.mapa{
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Belleza';
+    font-size: 24px;
+    gap: 15px;
+    margin-top: 30px;
+
+}
+
+.separador2{
+    display: flex;
+    align-self: center;
+}
+.separador2 img{
+    width: 50px;
+    height: 50px;
+    margin-top: 30px;
+   
+}
+footer{
+    width: 420px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Belleza';
+}
