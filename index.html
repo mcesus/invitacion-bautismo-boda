@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src=""></script>
+   
     <title>Invitacion Bautismo-Casamiento</title>
 </head>
 <body>
@@ -14,7 +14,12 @@
             <h2>- MI BAUTISMO -</h2>
             <h1>Martín Burgos Cisneros</h1>
             <p>Te invitamos a celebrar con nosotros<br> el Bautismo de nuestro querido hijo<p> 
-            <img class="heart" src="./img/proicons--heart.svg" alt="">
+                <div class="sonido">
+                    <img class="sonido-play" class="vibrating-icon" id="sonido-imagen" src="./img/mdi--music.svg" alt="">
+                    <!-- <span id="sonido-texto">Sonido</span> -->
+                    <audio id="audio" src="./audio/Axel - Celebra La Vida (Audio).mp3"></audio>
+                </div>
+            <!-- <img class="heart" src="./img/proicons--heart.svg" alt=""> -->
              
         </section>
 
@@ -35,48 +40,94 @@
             <div class="frase">
                 "El amor nos ha llevado a este momento mágico. Los invitamos a ser testigos de nuestra promesa de amor"
             </div>
-                <p class="fecha">El dia 30 de Noviembre de 2024</p>
-                <br>
-                <p class="fecha">21:00 HS</p>
-                <h3 class="lugar">Las Yungas Eventos Resto & Delivery</h3>
-                <p class="presencia">-Por favor, confirmar presencia-</p>
+
+            <h3 class="subtitulo">FALTAN</h3>
+            <div id="countdown">
+                <div class="time-section">
+                    <span id="days"></span>
+                    <div class="label">Días</div>
+                </div>
+                <div class="time-section">
+                    <span id="hours" ></span>
+                    <div class="label">Horas</div>
+                </div>
+                <div class="time-section">
+                    <span id="minutes" ></span>
+                    <div class="label">Min</div>
+                </div>
+                <div class="time-section">
+                    <span id="seconds"></span>
+                    <div class="label">Seg</div>
+                </div>
+         
+                
         </section>
 
         <span class="separador">
             <img src="./img/file-icons--leaflet.svg" alt="">
         </span>
 
-        <section class="botones">
-            <button class="confirmar">
-                Confirmar Asistencia
+        <section class="ceremonia">
+
+            <h2>Ceremonia</h2>
+            <!-- <p class="fecha">El dia 30 de Noviembre de 2024</p>
+                <br>
+                <p class="fecha">21:00 HS</p>
+                <h3 class="lugar">Las Yungas Eventos Resto & Delivery</h3>
+                <p class="presencia">-Por favor, confirmar presencia-</p>  -->
+            
+            <h3 class="subtitulo">DIA</h3>
+            <p class="fecha">Sábado 30 de Noviembre de 2024</p>
+            <p class="fecha">11:30 HS</p>
+            <h3 class="subtitulo">LUGAR</h3>
+            <h3 class="lugar">Parroquia Espiritu Santo-Av. Central 4300, San Miguel de Tucuman</h3>
+            <button class="map">
+                ¿Cómo llegar?
             </button>
-            <button class="agendar">
+        </section>
+        
+        <span class="separador">
+            <img src="./img/file-icons--leaflet.svg" alt="">
+        </span>
+
+
+        <section class="fiesta">
+            <h2>Fiesta</h2>
+            <h3 class="subtitulo">DIA</h3>
+            <p class="fecha">Sábado 30 de Noviembre de 2024</p>
+            <p class="fecha">12:30 a 18:00 HS</p>
+            
+            <h3 class="subtitulo">LUGAR</h3>
+            <h3 class="lugar">Las Yungas Eventos Resto & Delivery</h3>
+            <div class="botones">
+                <button class="agendar">
                 Agendar Evento
-            </button>
+                </button>
+                <button class="confirmar">
+                Confirmar Asistencia
+                </button>
+                <button class="map">
+                ¿Cómo llegar?
+                </button>
+            </div>
+
+        </section>
 
             <span class="separador">
-                <img src="./img/file-icons--leaflet.svg" alt="">
+                <img src="./img/iconoir--gift.svg" alt="">
             </span>
 
             <h2 class="regalo">Tu presencia es el mejor regalo,<br> pero si deseas contribuir, podes hacerlo aquí</h2>
 
-            <button class="cbu">
+            <button id="copyBtn" class="cbu">
                 Descargar CBU
             </button>
+            <p id="status">Número copiado al portapapeles</p>
 
             
         </section>  
 
-        <span class="separador">
-            <img src="./img/file-icons--leaflet.svg" alt="">
-        </span>
-
-        <section class="mapa">
-            <h2>Lugar del Evento</h2>
-            <p>Las Yungas Eventos Restó & Delivery</p>
-            <p>Las Yungas Golf & Country Club, Yerba Buena, Tucumán</p>
-            <button class="map">COMO LLEGAR</button>
-        </section>
+        
 
         <span class="separador2">
             <img src="./img/iconoir--union-horiz-alt (1).svg" alt="">
@@ -90,5 +141,7 @@
         <p>Contacto mceciliaalbornoz@gmail.com</p>
         <p>Whatsapp 3815545723</p>
     </footer>
+
+    <script src="./scrip.js"></script>
 </body>
 </html>

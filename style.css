@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family:'6Hands' ;
-    src: url(./fonts/6hands/SixHandsChalk.ttf);
+    font-family:'Cookie' ;
+    src: url(./fonts/Cookie-Regular.ttf);
 }
 
 :root{
@@ -27,7 +27,7 @@ body{
     flex-wrap: wrap;
     margin: 0 auto;
     width: 420px;
-    height: 3000px;
+    height: 5000px;
     /* border: 1px solid black; */
 }
 .principal{
@@ -35,11 +35,13 @@ body{
     flex-direction: column;
     width: 420px;
     height: 800px;
-    background-image: url(./img/fondo3.jpg);
+    background-image: url(./img/bg-light-2.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+   background-size: cover;
      
 }
+
+
 
 .church{
    display: flex;
@@ -50,6 +52,28 @@ body{
    width: 100px;
    height: 120px;
 }
+.sonido{
+    display: flex;
+    align-self: center;
+}
+.sonido-play{
+    height: 50p;
+    width: 50px;
+    cursor: pointer;
+}
+
+.sonido-play:hover{
+    animation: vibrate 0.9s infinite;
+}
+
+@keyframes vibrate {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+  }
+
 .principal h2{
     align-self: center;
     font-family: 'Belleza';
@@ -57,7 +81,7 @@ body{
 }
 
 h1{
-    font-family: '6Hands';
+    font-family: 'Cookie';
     font-size: 72px;
     align-self: center;
     text-align: center;
@@ -78,6 +102,25 @@ h1{
     height: 50px;
     
 }
+
+.heart{
+    animation: heartbeat 1s infinite;
+}
+@keyframes heartbeat {
+    0%, 100% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    75% {
+      transform: scale(1.1);
+    }
+  }
+
 .detalles{
     display: flex;
     flex-direction: column;
@@ -88,10 +131,10 @@ h1{
     background-size: cover;
 }
 .quiero{
-    font-family:'6Hands' ;
-    font-size: 36px;
+    font-family:'Cookie' ;
+    font-size: 40px;
     align-self: center;
-    margin-top: -13px;
+   
 
 }
 
@@ -106,8 +149,10 @@ h1{
 .detalles2{
     display: flex;
     flex-direction: column;
-    height: 420px;
+    height: 490px;
     width: 420px;
+    margin-top: 30px;
+    
 }
 .pareja{
     
@@ -115,8 +160,8 @@ h1{
     flex-direction: row;
     justify-content: center;
     align-self: center;
-    font-family: '6Hands';
-    font-size: 30px;
+    font-family: 'Cookie';
+    font-size: 36px;
     
 }
 
@@ -134,9 +179,79 @@ h1{
 }
 .frase{
     text-align: center;
-    line-height: 24px;
+    line-height: 28px;
     font-family: 'Belleza';
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+#countdown{
+    display: flex;
+    flex-direction: row;
+    background-color: #a6a381;
+   
+    gap: 20px;
+    width: 336px;
+    height: 200px;
+   
+    margin-top: 40px;
+    font-family: 'Belleza';
+    font-size: 32px;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    color: white;
+    border-radius: 100%;
+    padding: 30px;
+}
+
+#hours::before{
+    content: ":";
+    font-size: 32px;
+    color: var(--text-white);
+    margin-right: 30px;
+    
+}
+#minutes::before{
+    content: ":";
+    font-size: 32px;
+    color: var(--text-white);
+    margin-right: 20px;
+}
+#seconds::before{
+    content: ":";
+    font-size: 32px;
+    color: var(--text-white);
+    margin-right: 20px;
+}
+.time-section{
+    display: grid;
+    flex-direction: column;
+    align-self: center;
+    
+}
+.label{
+    justify-self:center
+}
+.ceremonia{
+    width: 420px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+}
+.ceremonia h2{
+    font-family: 'Cookie';
+    font-size: 48px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.subtitulo{
+    font-family: 'Belleza';
+    font-size: 28px;
+    text-align: center;
+    margin-top: 40px;
     font-weight: bold;
 }
 .fecha, .lugar{
@@ -145,6 +260,22 @@ h1{
     font-weight: bold;
     align-self: center;
     margin-top: 30px;
+    text-align: center;
+}
+.lugar{
+    margin-bottom: 40px;
+}
+.fiesta{
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    height: 820px;
+}
+.fiesta h2{
+    font-family: 'Cookie';
+    font-size: 48px;
+    text-align: center;
+    margin-top: 40px;
 }
 
 .presencia{
@@ -172,11 +303,13 @@ h1{
     flex-direction: column;
     width: 420px;
     height: 580px;
+    gap: 40px;
+    margin-top: 40px;
 
 }
 
 .confirmar, .agendar, .cbu, .map{
-    margin-top: 50px;
+   
     align-self: center;
     width: 280px;
     height: 70px;
@@ -185,12 +318,28 @@ h1{
     font-size: 24px;
     font-weight: bold;
     border: 5px solid #a6a381;
+    cursor: pointer;
+ 
     
 }
-
-.agendar{
-    margin-bottom: 40px;
+.confirmar:hover{
+    background-color: #a6a381;
+    color: white;
 }
+
+.agendar:hover{
+    background-color: #a6a381;
+    color: white;
+}
+.cbu:hover{
+    background-color: #a6a381;
+    color: white;
+}
+ .map:hover{
+    background-color: #a6a381;
+    color: white;
+}
+
 
 .regalo{
     display: flex;
@@ -199,6 +348,7 @@ h1{
     font-weight: bold;
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 40px;
   
 }
 
@@ -223,6 +373,14 @@ h1{
     height: 50px;
     margin-top: 30px;
    
+}
+#status {
+    margin-top: 10px;
+    margin-left: 65px;
+    color:black;
+    font-size: 24px;
+    font-family: 'Belleza';
+    display: none;
 }
 footer{
     width: 420px;
