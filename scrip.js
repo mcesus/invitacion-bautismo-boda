@@ -23,6 +23,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // Asigna la función al botón de copiar
     document.getElementById('copyBtn').addEventListener('click', copyNumberToClipboard);        });
 
+
+
+
+    //CUENTA REGRESIVA
+
     // Fecha objetivo para la cuenta regresiva (por ejemplo, el 31 de diciembre de 2024)
 const targetDate = new Date('Novembre 30, 2024 12:30:00').getTime();
 
@@ -67,3 +72,51 @@ document.getElementById('sonido-imagen').addEventListener('click', function() {
          this.src = './img/material-symbols--pause.svg'; // Cambia la imagen a "pause"
       }
   });
+
+
+  //MAPAS
+
+  document.getElementById('mapsButton').addEventListener('click', function() {
+    const address = 'Parroquia Espíritu Santo, Av. Central 4300, T4000 San Miguel de Tucumán, Tucumán';  // Dirección del evento
+
+    const mapsUrl = `https://www.google.com/maps?q= ${encodeURIComponent(address)}`;
+    window.open(mapsUrl, '_blank');
+});
+
+
+document.getElementById('mapsButton2').addEventListener('click', function() {
+    const address = 'Las Yungas Eventos Restó & Delivery, Las Yungas Golf & Country Club, Country, T4107 Yerba Buena, Tucumán';  // Dirección del evento
+
+    const mapsUrl = `https://www.google.com/maps?q= ${encodeURIComponent(address)}`;
+    window.open(mapsUrl, '_blank');
+});
+
+
+//BOTON WS
+
+document.getElementById('whatsapp-boton').addEventListener('click', function() {
+    const phoneNumber = '3813000639';  // Número de teléfono al que se enviará el mensaje
+    const message = 'Hola, quiero confirmar mi asistencia al evento.';  // Mensaje a enviar
+
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+});
+
+//AGENDA
+
+function scheduleEvent() {
+    // Detalles del evento
+    const title = "Bautismo Martín y Boda Ana y Hugo";
+    const description = "Te esperamos para compartir un día Especial";
+    const location = "Lugar del evento aquí";
+
+    // Fecha y hora del evento: 24 de noviembre de 2024, 12:30 pm a 18:00 pm
+    const startDate = "20241124T123000"; // 24 de noviembre de 2024, 12:30 pm
+    const endDate = "20241124T180000";   // 24 de noviembre de 2024, 18:00 pm
+
+    // URL para redirigir a Google Calendar con los detalles del evento
+    const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${startDate}/${endDate}&details=${encodeURIComponent(description)}&location=${encodeURIComponent(location)}&sf=true&output=xml`;
+
+    // Redirigir a la página de Google Calendar con los detalles del evento
+    window.open(googleCalendarUrl, '_blank');
+  }

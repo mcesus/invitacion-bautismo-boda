@@ -11,6 +11,15 @@
 :root{
     --bc: #d8d6bc ;
     --font:  #a6a381;
+    --font2: #bb9554;
+    --fontSI: #b77e21;
+    --bc: #e1a73f;
+    --bc4: #f5f5dc;
+    --bc5: #2c3e50;
+    --bc6: #2c6e49;
+    --fontOro: #a67c29;
+    --colorIconos: #c79747;
+    
 }
 
 *{
@@ -20,6 +29,7 @@
 }
 body{
     background-color:whitesmoke;
+    color: var(--fontOro);
 }
 .container{
     display: flex;
@@ -35,9 +45,10 @@ body{
     flex-direction: column;
     width: 420px;
     height: 800px;
-    background-image: url(./img/bg-light-2.jpg);
+    background-image: url(./img/fondo-blanco.jpg);
     background-repeat: no-repeat;
-   background-size: cover;
+    background-size: cover;
+    border-radius: 10px;
      
 }
 
@@ -126,10 +137,22 @@ h1{
     flex-direction: column;
     height: 520px;
     width: 420px;
-    background-image: url(./img/foto-pareja-edit.jpg);
+    background-image: url(./img/foto-pareja.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 30px;
+    border-radius: 10px;
 }
+.titulo-siquiero{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Belleza';
+    font-size: 18px;
+
+}
+
 .quiero{
     font-family:'Cookie' ;
     font-size: 40px;
@@ -139,10 +162,12 @@ h1{
 }
 
 .detalles .testigos{
-    margin-top: 20px;
+   
     font-family: 'Belleza';
     font-size: 26px;
     align-self: center;
+    text-align: center;
+   
    
 }
 
@@ -189,7 +214,7 @@ h1{
 #countdown{
     display: flex;
     flex-direction: row;
-    background-color: #a6a381;
+    background-color:var(--colorIconos);
    
     gap: 20px;
     width: 336px;
@@ -236,7 +261,7 @@ h1{
 }
 .ceremonia{
     width: 420px;
-    height: 580px;
+    height: 500px;
     display: flex;
     flex-direction: column;
 }
@@ -259,7 +284,7 @@ h1{
     font-size: 24px;
     font-weight: bold;
     align-self: center;
-    margin-top: 30px;
+    margin-top: 10px;
     text-align: center;
 }
 .lugar{
@@ -269,7 +294,7 @@ h1{
     display: flex;
     flex-direction: column;
     width: 420px;
-    height: 820px;
+    height: 760px;
 }
 .fiesta h2{
     font-family: 'Cookie';
@@ -302,7 +327,7 @@ h1{
     display: flex;
     flex-direction: column;
     width: 420px;
-    height: 580px;
+    height: 520px;
     gap: 40px;
     margin-top: 40px;
 
@@ -317,26 +342,27 @@ h1{
     font-family: 'Belleza';
     font-size: 24px;
     font-weight: bold;
-    border: 5px solid #a6a381;
+    border: 5px solid var(--colorIconos);
     cursor: pointer;
+    color: var(--fontSI);
  
     
 }
 .confirmar:hover{
-    background-color: #a6a381;
+    background-color: var(--fontSI);
     color: white;
 }
 
 .agendar:hover{
-    background-color: #a6a381;
+    background-color:var(--fontSI);
     color: white;
 }
 .cbu:hover{
-    background-color: #a6a381;
+    background-color:var(--fontSI);
     color: white;
 }
  .map:hover{
-    background-color: #a6a381;
+    background-color:var(--fontSI);
     color: white;
 }
 

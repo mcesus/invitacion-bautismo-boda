@@ -10,12 +10,12 @@
 <body>
     <div class="container">
         <section class="principal">
-            <img class="church" src="./img/ph--church-light.svg" alt="">
+            <img class="church" src="./img/ph--church-final.svg" alt="">
             <h2>- MI BAUTISMO -</h2>
             <h1>Martín Burgos Cisneros</h1>
             <p>Te invitamos a celebrar con nosotros<br> el Bautismo de nuestro querido hijo<p> 
                 <div class="sonido">
-                    <img class="sonido-play" class="vibrating-icon" id="sonido-imagen" src="./img/mdi--music.svg" alt="">
+                    <img class="sonido-play" class="vibrating-icon" id="sonido-imagen" src="./img/mdi--music-final.svg" alt="">
                     <!-- <span id="sonido-texto">Sonido</span> -->
                     <audio id="audio" src="./audio/Axel - Celebra La Vida (Audio).mp3"></audio>
                 </div>
@@ -23,20 +23,22 @@
              
         </section>
 
-
-        <section class="detalles">
+        <section class="titulo-siquiero">
             <h2 class="testigos">Y también a ser testigos de nuestro </h2>
             <h2 class="quiero">Si quiero!</h2>
            
+
+
+        </section>
+`
+
+        <section class="detalles">
             
         </section>
+        
 
         <section class="detalles2">
-            <div class="pareja">
-                <h2>Ana </h2>
-                <img class="union" src="./img/lucide--ampersand.svg" alt="">
-                <h2>Hugo</h2>
-            </div>
+            
             <div class="frase">
                 "El amor nos ha llevado a este momento mágico. Los invitamos a ser testigos de nuestra promesa de amor"
             </div>
@@ -64,7 +66,7 @@
         </section>
 
         <span class="separador">
-            <img src="./img/file-icons--leaflet.svg" alt="">
+            <img src="./img/file-icons--leaflet-final.svg" alt="">
         </span>
 
         <section class="ceremonia">
@@ -81,7 +83,7 @@
             <p class="fecha">11:30 HS</p>
             <h3 class="subtitulo">LUGAR</h3>
             <h3 class="lugar">Parroquia Espiritu Santo-Av. Central 4300, San Miguel de Tucuman</h3>
-            <button class="map">
+            <button class="map" id="mapsButton">
                 ¿Cómo llegar?
             </button>
         </section>
@@ -98,15 +100,15 @@
             <p class="fecha">12:30 a 18:00 HS</p>
             
             <h3 class="subtitulo">LUGAR</h3>
-            <h3 class="lugar">Las Yungas Eventos Resto & Delivery</h3>
+            <h3 class="lugar">Las Yungas Eventos Resto & Delivery (Country Las Yungas Yerba Buena)</h3>
             <div class="botones">
-                <button class="agendar">
+                <button onclick="scheduleEvent()" class="agendar">
                 Agendar Evento
                 </button>
-                <button class="confirmar">
+                <button class="confirmar" id="whatsapp-boton">
                 Confirmar Asistencia
                 </button>
-                <button class="map">
+                <button class="map" id="mapsButton2">
                 ¿Cómo llegar?
                 </button>
             </div>
