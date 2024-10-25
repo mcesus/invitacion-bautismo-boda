@@ -37,7 +37,7 @@ body{
     flex-wrap: wrap;
     margin: 0 auto;
     width: 420px;
-    height: 5000px;
+    height: 4460px;
     /* border: 1px solid black; */
 }
 .principal{
@@ -71,11 +71,12 @@ body{
     height: 50p;
     width: 50px;
     cursor: pointer;
+    animation: vibrate 2s infinite;
 }
 
-.sonido-play:hover{
+/* .sonido-play:hover{
     animation: vibrate 0.9s infinite;
-}
+} */
 
 @keyframes vibrate {
     0% { transform: translateX(0); }
@@ -97,6 +98,7 @@ h1{
     align-self: center;
     text-align: center;
     margin-top: 100px;
+    font-weight: 100;
 }
 
 .principal p{
@@ -143,6 +145,18 @@ h1{
     margin-top: 30px;
     border-radius: 10px;
 }
+
+.detalles::after{
+    background-image: url(./img/img_ondas01.svg);
+    position: absolute;
+    content: '';
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 420px;
+    z-index: 9;
+    margin-top: 460px;
+}
+
 .titulo-siquiero{
     display: flex;
     flex-direction: column;
@@ -260,18 +274,51 @@ h1{
     justify-self:center
 }
 .ceremonia{
+    display: flex;
+    flex-direction: column;
     width: 420px;
     height: 500px;
     display: flex;
     flex-direction: column;
 }
-.ceremonia h2{
+.sub-ceremonia{
+    display: flex;
     font-family: 'Cookie';
     font-size: 48px;
     text-align: center;
     margin-top: 40px;
+    background-color: var(--colorIconos);
+    color: white;
+    width: fit-content;
+    align-self: center;
+    padding: 10px;
 }
-
+.sub-ceremonia::before{
+    background-image: url(./img/material-symbols--label-important.svg);
+    position: absolute;
+    content: '';
+    background-size: contain;
+    /* transform: rotate(360deg); */
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 100px;
+    margin-left: -38px;
+    margin-top: -9px;
+    z-index: -2;
+}
+.sub-ceremonia::after{
+    background-image: url(./img/material-symbols--label-important.svg);
+    position: absolute;
+    content: '';
+    background-size: contain;
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 100px;
+    margin-left: 83px;
+    margin-top: -11px;
+    z-index: -2;
+}
 .subtitulo{
     font-family: 'Belleza';
     font-size: 28px;
@@ -286,6 +333,7 @@ h1{
     align-self: center;
     margin-top: 10px;
     text-align: center;
+    
 }
 .lugar{
     margin-bottom: 40px;
@@ -294,15 +342,47 @@ h1{
     display: flex;
     flex-direction: column;
     width: 420px;
-    height: 760px;
+    height: 783px;
 }
-.fiesta h2{
+.sub-fiesta{
+    
+    display: flex;
     font-family: 'Cookie';
     font-size: 48px;
     text-align: center;
     margin-top: 40px;
+    background-color: var(--colorIconos);
+    color: white;
+    width: fit-content;
+    align-self: center;
+    padding: 10px;
 }
-
+.sub-fiesta::before{
+    background-image: url(./img/material-symbols--label-important.svg);
+    position: absolute;
+    content: '';
+    background-size: contain;
+    /* transform: rotate(360deg); */
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 100px;
+    margin-left: -38px;
+    margin-top: -9px;
+    z-index: -2;
+}
+.sub-fiesta::after{
+    background-image: url(./img/material-symbols--label-important.svg);
+    position: absolute;
+    content: '';
+    background-size: contain;
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 100px;
+    margin-left: 21px;
+    margin-top: -11px;
+    z-index: -2;
+}
 .presencia{
     font-family: 'Belleza';
     font-size: 18px;
@@ -400,6 +480,18 @@ h1{
     margin-top: 30px;
    
 }
+
+.separador4{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.icono-gift{
+    width: 70px;
+    height: 70px;
+    margin-top: 40px;
+}
 #status {
     margin-top: 10px;
     margin-left: 65px;
@@ -408,6 +500,89 @@ h1{
     font-family: 'Belleza';
     display: none;
 }
+
+.separador3{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+}
+
+.icono-bow{
+    width: 80px;
+    height: 80px;
+    margin-top: 40px;
+}
+.dress-code{
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-dresscode{
+    display: flex;
+    font-family: 'Cookie';
+    font-size: 48px;
+    text-align: center;
+    margin-top: 40px;
+    background-color: var(--colorIconos);
+    color: white;
+    width: fit-content;
+    align-self: center;
+    padding: 10px;
+}
+
+.sub-dresscode::before{
+    background-image: url(./img/material-symbols--label-important.svg);
+    position: absolute;
+    content: '';
+    background-size: contain;
+    /* transform: rotate(360deg); */
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 100px;
+    margin-left: -38px;
+    margin-top: -9px;
+    z-index: -2;
+}
+
+.sub-dresscode::after{
+    background-image: url(./img/material-symbols--label-important.svg);
+    position: absolute;
+    content: '';
+    background-size: contain;
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 100px;
+    margin-left: 88px;
+    margin-top: -10px;
+    z-index: -2;
+}
+
+.dress-code p{
+    font-family: 'Belleza';
+    font-size: 24px;
+    font-weight: bold;
+    align-self: center;
+    margin-top: 40px;
+    text-align: center;
+}
+.frase-final{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 50px;
+   
+    
+}
+.sub-frasefinal{
+    justify-items: center;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Belleza';
+   
+}
+
 footer{
     width: 420px;
     margin: 0 auto;
