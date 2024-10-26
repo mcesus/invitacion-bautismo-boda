@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Función que copia el número al portapapeles
     function copyNumberToClipboard() {
-        const number = BigInt('2850600140095354249768'); // El número a copiar
+        const number = ["CBU:", BigInt('2850600140095354249768') ,"Titular: ANA MARGARITA CISNEROS MOLINA"]; // El número a copiar
 
         // Usa la API del portapapeles para copiar el número
         navigator.clipboard.writeText(number.toString()).then(function() {
@@ -111,8 +111,8 @@ function scheduleEvent() {
     const location = "Lugar del evento aquí";
 
     // Fecha y hora del evento: 24 de noviembre de 2024, 12:30 pm a 18:00 pm
-    const startDate = "20241124T123000"; // 24 de noviembre de 2024, 12:30 pm
-    const endDate = "20241124T180000";   // 24 de noviembre de 2024, 18:00 pm
+    const startDate = "20241130T123000"; // 24 de noviembre de 2024, 12:30 pm
+    const endDate = "20241130T180000";   // 24 de noviembre de 2024, 18:00 pm
 
     // URL para redirigir a Google Calendar con los detalles del evento
     const googleCalendarUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${startDate}/${endDate}&details=${encodeURIComponent(description)}&location=${encodeURIComponent(location)}&sf=true&output=xml`;
