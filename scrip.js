@@ -96,7 +96,7 @@ document.getElementById('mapsButton2').addEventListener('click', function() {
 
 document.getElementById('whatsapp-boton').addEventListener('click', function() {
     const phoneNumber = '3813000639';  // Número de teléfono al que se enviará el mensaje
-    const message = 'Hola, quiero confirmar mi asistencia al evento y la cantidad de personas que asistiremos';  // Mensaje a enviar
+    const message = 'Hola, quiero confirmar mi presencia en el evento y la cantidad de personas que asistiremos';  // Mensaje a enviar
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
