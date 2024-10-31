@@ -28,7 +28,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color:whitesmoke;
+    background-color:whitesmoke !important;
     color: var(--fontOro);
 }
 .container{
@@ -589,3 +589,4 @@ footer{
     text-align: center;
     font-family: 'Belleza';
 }
+
