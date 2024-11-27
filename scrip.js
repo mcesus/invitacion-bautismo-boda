@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Función que copia el número al portapapeles
     function copyNumberToClipboard() {
-        const number = ["CBU:", BigInt( '2850600140095354249768') ,"Titular: ANA MARGARITA CISNEROS MOLINA"]; // El número a copiar
+        const number = [ BigInt( '2850600140095354249768')]; // El número a copiar
 
         // Usa la API del portapapeles para copiar el número
         navigator.clipboard.writeText(number.toString()).then(function() {
